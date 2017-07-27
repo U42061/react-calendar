@@ -1,0 +1,22 @@
+.ps.ps--active-x>.ps__scrollbar-x-rail, .ps.ps--active-y>.ps__scrollbar-y-rail {
+    background: #fff !important;
+}
+
+.ps:hover>.ps__scrollbar-y-rail >.ps__scrollbar-y {
+    background-color: #999;
+}
+.ps:hover>.ps__scrollbar-x-rail, .ps:hover>.ps__scrollbar-y-rail {
+    opacity: 1;
+}
+
+.ps>.ps__scrollbar-y-rail:hover>.ps__scrollbar-y, .ps>.ps__scrollbar-y-rail:active>.ps__scrollbar-y {
+    width: 6px !important;
+}
+
+.ps>.ps__scrollbar-y-rail {
+    width: 10px;
+}
+
+.ps:hover>.ps__scrollbar-y-rail:hover {
+    opacity: 1;
+}

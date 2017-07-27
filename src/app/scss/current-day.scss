@@ -1,0 +1,46 @@
+.current-date {
+    .current-day {
+        width: 100%;
+        padding: 10px 20px;
+        text-align: center;
+
+        background: $secondary-color;
+    }
+
+    .main-date {
+        background: $primary-color;
+        padding: 30px 16px 16px;
+        height: 160px;
+        text-align: center;
+        color: #fff;
+        font: 24px $font-family-roboto;
+    }
+
+    .today i {
+        font-size: 30px;
+        position: relative;
+        top: 6px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .day {
+        font: 64px $font-family-roboto;
+        display: block;
+        margin: 4px 0;
+    }
+
+    .btn.btn-default, .dropdown {
+        width: 150px;
+        display: inline-block;
+    }
+
+    .dropdown-menu {
+        min-width: 150px;
+    }
+
+    .caret {
+        margin-left: 10px;
+    }
+
+}

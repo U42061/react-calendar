@@ -1,0 +1,39 @@
+$line-height: 60px;
+$indent: 34px;
+
+.month-slider {
+    width: 100%;
+    line-height: $line-height;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $font-family-roboto;
+
+    .arrow {
+        position: absolute;
+        top: 0;
+        background: none;
+        border: none;
+        width: $line-height;
+        height: $line-height;
+        transition: opacity;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &.left {
+            left: $indent;
+        }
+
+        &.right {
+            right: $indent;
+        }
+    }
+}

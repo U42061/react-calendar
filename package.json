@@ -1,0 +1,40 @@
+{
+  "name": "calendar-demo",
+  "version": "1.0.0",
+  "description": "Demo calendar on react",
+  "main": "calendar-entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devserver": "webpack-dev-server --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --port 8092 --host 0.0.0.0"
+  },
+  "author": "Natalya Karanevich",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "material-design-icons": "^3.0.1",
+    "moment": "^2.18.1",
+    "nb-moment-calendar": "^0.8.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.2",
+    "redux": "^3.7.2",
+    "roboto-fontface": "^0.8.0"
+  },
+  "devDependencies": {
+    "babel": "^5",
+    "babel-loader": "5.*",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "*",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}

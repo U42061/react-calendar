@@ -1,0 +1,94 @@
+.dates-grid .dateitem {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+
+    &:hover {
+        color: #fff;
+
+        .event {
+            background: #fff;
+            z-index: 3;
+        }
+    }
+
+    &:hover:before{
+        background: $primary-color;
+        opacity: 0.5;
+        width: 35px;
+        height: 35px;
+        z-index: 0;
+    }
+
+    span {
+        z-index: 1;
+        position: relative;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 100ms ease-in-out, height 100ms ease-in-out;
+    }
+
+    &.current {
+        color: #fff;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            background: $primary-color;
+        }
+
+        .event {
+            background: #fff;
+            z-index: 3;
+        }
+    }
+
+    &.selected:after,
+    &.active:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $primary-color;
+    }
+
+    &.disabled {
+        opacity: 0.1;
+        pointer-events: none;
+    }
+
+    .event {
+        width: 5px;
+        height: 5px;
+        background: $primary-color;
+        border-radius: 10px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 5px;
+    }
+}

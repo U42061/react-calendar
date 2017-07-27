@@ -1,0 +1,21 @@
+.dates-grid {
+    height: 255px;
+    overflow: hidden;
+    padding: 0 5%;
+    max-width: 600px;
+
+    .weak-days {
+        width: 100%;
+        padding: 0 30px;
+
+        .item {
+            color: rgba(0, 0, 0, 0.54);
+            font-size: 14px;
+            font-weight: 600;
+            height: 36px;
+            width: 36px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+    }
+}
